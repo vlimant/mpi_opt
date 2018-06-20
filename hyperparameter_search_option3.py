@@ -96,9 +96,9 @@ def make_parser():
                         help='Number of process per worker instance')
     parser.add_argument('--num-iterations', type=int, default=10,
                         help='The number of steps in the skopt process')
+    parser.add_argument('--example', default='mnist', choices=['topclass','mnist','gan'])
     parser.add_argument('--torch', action='store_true',
                         help='Use PyTorch instead of (default) Keras')
-    parser.add_argument('--example', default='mnist', choices=['topclass','mnist','gan'])
     return parser
 
 
