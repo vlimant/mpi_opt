@@ -44,7 +44,6 @@ class BuilderFromFunction(object):
             print("Failed to build model with params: {}".format(str_param))
             return None
 
-    
 class BuilderFromFunctionJ(BuilderFromFunction):
     def __init__(self, model_fn, parameters=None):
         BuilderFromFunction.__init__(self, model_fn, parameters)
